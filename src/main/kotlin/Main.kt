@@ -18,4 +18,5 @@ fun main(args: Array<String>) {
         }
         println("Факториал числа: $n = $f")
     }
+    print(recursion())
 }
