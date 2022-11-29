@@ -1,7 +1,22 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import java.util.Scanner
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main(args: Array<String>) {
+    val reader = Scanner(System.`in`)
+
+    print("Введите цисло: ")
+
+    fun recursion () {
+        val n = reader.nextInt()
+
+        var f = 1
+        if (n > 0) {
+            f = 1
+        }
+
+        for (i in (1..n)) {
+            f *= i
+        }
+        println("Факториал числа: $n = $f")
+    }
+    print(recursion())
 }
